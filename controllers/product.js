@@ -35,8 +35,8 @@ module.exports.addProduct =async(req,res)=>{
             "productName":req.body.productName,
             "productDescription":req.body.productDescription,
             "productImage":req.body.productImage,
-            "productPrice":req.body.productPrice,
-            "productQty":req.body.productQty
+            "productPrice":req.body.productPrice
+          
         })
         let data =await _product.save()
         res.send(data)

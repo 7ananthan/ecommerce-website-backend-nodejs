@@ -8,8 +8,7 @@ const productSchema=new Schema(
         productDescription:{type:String},
         productImage:{type:String,required:true},
         productPrice:{type:Number,required:true},
-        productQty:{type:Number,min:0}
-    }
+        }
 )
 
 module.exports=mongoose.model("products",productSchema)
